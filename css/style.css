@@ -3,8 +3,17 @@
     margin: 0;
     padding: 0;
     font-family: 'Fredoka', sans-serif; 
-} 
+}
+
 /*utilities*/ 
+
+.clearfix::after{
+    content: ''; 
+    clear: both;
+    display: table;
+
+}
+ 
 .main{
     width: 80%;  
     margin: 0 auto; 
@@ -12,16 +21,8 @@
     
 } 
 
-.clearfix::after{
-    content: ''; 
-    clear: both;
-    display: table;
 
-} 
 
-.container{
-   
-}
 
 
 .card{
@@ -42,26 +43,25 @@ img{
     height: 100px;
     margin-right: 10px;
 }
+
 h2{
     padding: 7px;
 } 
 
-span{
-    padding-bottom: 7px;
-}
 
 
 a{
  color: blue; 
  text-decoration: none; 
- margin-top: 7px;
+ padding-top: 7px; 
+ display: block;
 }
 
 
 /*header*/
 h1{
-    font-size: 900;
-    color: palevioletred;
+    
+    color: rgb(240, 44, 109);
     text-align: center; 
     margin-top: 2rem;
 }  
